@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
+    tools:context=".MainActivity">
+
+ <TextView
+     android:id="@+id/TV1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="First Name"
+     android:layout_alignParentLeft="true"
+     android:layout_marginTop="20dp"
+     android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/Et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter First Name"
+        android:layout_toRightOf="@id/TV1"
+        android:elegantTextHeight="true"/>
+    <TextView
+        android:id="@+id/TV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:layout_below="@id/TV1"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"/>
+    <EditText
+        android:id="@+id/Et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Name"
+       android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/TV2"
+        android:layout_marginTop="45dp"
+        android:elegantTextHeight="true"/>
+    <Button
+        android:id="@+id/Btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Et2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Submit"/>
+
+
+
+
+
+
+</RelativeLayout>
